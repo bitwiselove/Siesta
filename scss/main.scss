@@ -1,1 +1,17 @@
+$primaryText: #535674;
+
 @import 'vendor/normalize';
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after { box-sizing: inherit; }
+
+body {
+  background-color: #ddd;
+  color: $primaryText;
+  font-family: 'Proxima Nova', Helvetica, sans-serif;
+}
+
+@import 'objects/container';
+@import 'components/Menubar';

@@ -359,3 +359,26 @@ textarea {
 [type="search"]::-webkit-search-cancel-button,
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
+
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+body {
+  background-color: #ddd;
+  color: #535674;
+  font-family: 'Proxima Nova', Helvetica, sans-serif; }
+
+.o-container {
+  max-width: 65em;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: .5em;
+  padding-right: .5em; }
+  .o-container.--wide {
+    max-width: 80em; }
+
+.c-Menubar {
+  background-color: #fff; }
