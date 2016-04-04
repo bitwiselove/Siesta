@@ -7,12 +7,15 @@
 
   .o-container {
     display: flex;
-    align-items: baseline;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 60px;
   }
 
 
   &__brand {
     order: 0;
+    margin-right: 3.25em;
   }
 
   &__nav {
