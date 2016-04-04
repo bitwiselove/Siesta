@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/bitwiselove/Siesta/issues"
   },
-  "homepage": "https://github.com/bitwiselove/Siesta#readme"
+  "homepage": "https://github.com/bitwiselove/Siesta#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
 }
