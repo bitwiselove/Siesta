@@ -381,4 +381,18 @@ body {
     max-width: 80em; }
 
 .c-Menubar {
-  background-color: #fff; }
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.14); }
+  .c-Menubar .o-container {
+    display: flex;
+    align-items: baseline; }
+  .c-Menubar__brand {
+    order: 0; }
+  .c-Menubar__nav {
+    order: 1; }
+  .c-Menubar__cart {
+    order: 2;
+    margin-left: auto; }

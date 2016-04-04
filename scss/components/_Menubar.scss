@@ -1,3 +1,26 @@
 .c-Menubar {
+  position: fixed;
+  top: 0;
+  width: 100%;
   background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,.14);
+
+  .o-container {
+    display: flex;
+    align-items: baseline;
+  }
+
+
+  &__brand {
+    order: 0;
+  }
+
+  &__nav {
+    order: 1;
+  }
+
+  &__cart {
+    order: 2;
+    margin-left: auto;
+  }
 }
