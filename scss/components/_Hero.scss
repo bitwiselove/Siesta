@@ -1,15 +1,18 @@
 .c-Hero {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 580px;
   margin-top: 60px;
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
   text-align: center;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 580px;
+  }
 
   &__title {
     margin: 0;
