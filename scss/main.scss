@@ -8,7 +8,7 @@ html {
 *, *:before, *:after { box-sizing: inherit; }
 
 body {
-  background-color: #ddd;
+  background-color: #fff;
   color: $primaryText;
   font-family: 'Proxima Nova', Helvetica, sans-serif;
 }
@@ -18,3 +18,6 @@ body {
 @import 'components/Brand';
 @import 'components/Nav';
 @import 'components/Cart';
+@import 'components/Hero';
+@import 'components/Section';
+@import 'components/Learn';
