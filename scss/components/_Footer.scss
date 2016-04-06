@@ -2,8 +2,29 @@
   background-color: #060c63;
   color: #fff;
 
+  a {
+    color: #a7d7fb;
+    text-decoration: none;
+
+    &:focus,
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
   &__body {
-    padding: 4.375em 0;
+    display: flex;
+    padding-top: 4.375em;
+    padding-bottom: 4.375em;
+  }
+
+  &__nav {
+    width: 50%;
+    @include clearfix;
+  }
+
+  &__newsletter {
+    margin-left: auto;
   }
 
   &__copy {
