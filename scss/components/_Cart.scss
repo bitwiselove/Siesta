@@ -11,6 +11,8 @@
   &__label {
     margin-right: .5em;
     color: $brick;
+
+    a { text-decoration: none; }
   }
 
   &__icon {
