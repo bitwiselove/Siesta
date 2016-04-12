@@ -34,6 +34,54 @@ body {
 @import 'components/FooterLabel';
 @import 'components/FooterNav';
 @import 'components/Newsletter';
+@import 'components/CartItem';
+
+.c-Checkout {
+  color: #7e7f86;
+
+  &__row {
+    @include clearfix;
+
+    &:not(:first-child) {
+      padding: .5em 0;
+    }
+  }
+
+  &__label {
+    float: left;
+    width: 50%;
+    color: #4b4b4b;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+
+  &__price {
+    float: left;
+    width: 50%;
+    text-align: right;
+  }
+
+  .c-Button {
+    margin-top: 1em;
+  }
+}
+
+.c-Button {
+  padding: .875em 1.875em;
+  border: 0;
+  border-radius: 4px;
+  font-weight: 700;
+  letter-spacing: 2px;
+
+  &.--primary {
+    background-color: #111b9f;
+    color: #fff;
+  }
+
+  &.--fullWidth {
+    width: 100%;
+  }
+}
 
 .u-lh {
   line-height: 1.45;
@@ -42,4 +90,12 @@ body {
 .u-1\/3 {
   float: left;
   width: (100% / 3);
+}
+
+.u-clearfix {
+  &:after {
+    display: table;
+    content: '';
+    clear: both;
+  }
 }

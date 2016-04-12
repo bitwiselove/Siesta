@@ -35,11 +35,68 @@
         <div class="c-Cart js-cart is-visible">
           <div class="c-Cart__header">
             <h2 class="c-Cart__heading">CART</h2>
-            <a class="c-Cart__close js-cartToggle" href="#">X</a>
+            <a class="c-Cart__close js-cartToggle" href="#">&times;</a>
           </div>
-          <div>
-            <p>$9,001</p>
-            <button class="c-button" type="submit">CHECKOUT</button>
+          <div class="c-Cart__row">
+            <div class="c-CartItem">
+              <div class="c-CartItem__thumbnail">
+                <img src="http://placekitten.com/300/300" alt="">
+              </div>
+              <div class="c-CartItem__body">
+                <div class="c-CartItem__header">
+                  <h3 class="c-CartItem__title">Siesta</h3>
+                  <a class="c-CartItem__remove" href="#">X</a>
+                </div>
+                <p class="c-CartItem__description">Color: Red</p>
+                <div class="c-CartItem__footer">
+                  <div class="c-CartItem__quantity">
+                    Quantity component
+                  </div>
+                  <span class="c-CartItem__price">$1337.00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="c-Cart__row">
+            <div class="c-CartItem">
+              <div class="c-CartItem__thumbnail">
+                <img src="http://placekitten.com/305/305" alt="">
+              </div>
+              <div class="c-CartItem__body">
+                <div class="c-CartItem__header">
+                  <h3 class="c-CartItem__title">Siesta</h3>
+                  <a class="c-CartItem__remove" href="#">X</a>
+                </div>
+                <p class="c-CartItem__description">Color: Red</p>
+                <div class="c-CartItem__footer">
+                  <div class="c-CartItem__quantity">
+                    Quantity component
+                  </div>
+                  <span class="c-CartItem__price">$1337.00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="c-Cart__row">
+            <div class="c-Checkout">
+              <div class="c-Checkout__row">
+                <div class="c-Checkout__label">
+                  SHIPPING:
+                </div>
+                <div class="c-Checkout__price">
+                  FREE
+                </div>
+              </div>
+              <div class="c-Checkout__row">
+                <div class="c-Checkout__label">
+                  TOTAL:
+                </div>
+                <div class="c-Checkout__price">
+                  $9,001.00
+                </div>
+              </div>
+              <button class="c-Button --primary --fullWidth" type="submit">CHECKOUT</button>
+            </div>
           </div>
         </div>
       </div>
