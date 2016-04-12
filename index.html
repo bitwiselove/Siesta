@@ -23,12 +23,23 @@
         </nav>
 
         <div class="c-Menubar__cart">
-          <div class="c-Cart">
-            <p class="c-Cart__label"><a href="#" class="c-Cart__label">CART</a></p>
+          <div class="c-Cartmenu js-cartToggle">
+            <p class="c-Cartmenu__label"><a href="#" class="c-Cartmenu__label">CART</a></p>
 
-            <div class="c-Cart__icon">
-              <span class="c-Cart__count">2</span>
+            <div class="c-Cartmenu__icon">
+              <span class="c-Cartmenu__count">2</span>
             </div>
+          </div>
+        </div>
+
+        <div class="c-Cart js-cart is-visible">
+          <div class="c-Cart__header">
+            <h2 class="c-Cart__heading">CART</h2>
+            <a class="c-Cart__close js-cartToggle" href="#">X</a>
+          </div>
+          <div>
+            <p>$9,001</p>
+            <button class="c-button" type="submit">CHECKOUT</button>
           </div>
         </div>
       </div>
@@ -99,5 +110,7 @@
         </div>
       </div>
     </footer>
+    <script src="assets/jquery.min.js"></script>
+    <script src="assets/main.js"></script>
   </body>
 </html>
