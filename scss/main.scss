@@ -57,6 +57,14 @@ body {
   width: (100% / 3);
 }
 
+.u-mt2 {
+  margin-top: 2em;
+}
+
+.u-mb2 {
+  margin-bottom: 2em;
+}
+
 .u-clearfix {
   @include clearfix;
 }

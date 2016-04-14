@@ -1,4 +1,44 @@
 .c-Section {
   padding: 3.125em 0;
   background-color: #d3ebfd;
+  text-align: center;
+
+  img {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  h2 {
+    margin-top: 0;
+    margin-bottom: .5em;
+    font-size: 2.25em;
+    letter-spacing: 2px;
+  }
+
+  p {
+    margin-top: 0;
+    font-size: 1.5em;
+  }
+
+  .o-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__image,
+  &__copy {
+    width: 50%;
+  }
+
+  @include mobile {
+    .o-container {
+      display: block;
+    }
+    &__image,
+    &__copy {
+      width: 100%;
+    }
+  }
 }
