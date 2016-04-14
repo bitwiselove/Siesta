@@ -1,0 +1,16 @@
+.c-Button {
+  padding: .875em 1.875em;
+  border: 0;
+  border-radius: 4px;
+  font-weight: 700;
+  letter-spacing: 2px;
+
+  &.--primary {
+    background-color: #111b9f;
+    color: #fff;
+  }
+
+  &.--fullWidth {
+    width: 100%;
+  }
+}

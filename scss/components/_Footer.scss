@@ -37,4 +37,15 @@
       letter-spacing: 1px;
     }
   }
+
+  @include mobile {
+    &__body {
+      display: block;
+    }
+
+    &__nav,
+    &__newsletter {
+      width: 100%;
+    }
+  }
 }

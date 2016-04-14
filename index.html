@@ -10,6 +10,22 @@
   <body>
     <header class="c-Menubar">
       <div class="o-container --wide">
+        <div class="c-Menubar__hamburger">
+          <button class="hamburger hamburger--elastic js-burger" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+        </div>
+
+        <div class="c-MobileNav js-mobileNav">
+          <ul class="c-MobileNav__nav">
+            <li><a href="#" class="is-active">SHOP</a></li>
+            <li><a href="#">FEATURES</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
+        </div>
+
         <div class="c-Menubar__brand">
           <h1 class="c-Brand"><a href="#">Siesta</a></h1>
         </div>
@@ -37,7 +53,7 @@
             <h2 class="c-Cart__heading">CART</h2>
             <a class="c-Cart__close js-cartToggle" href="#">&times;</a>
           </div>
-          <div class="c-Cart__row">
+          <div class="c-Cart__row" data-item-id="1" data-item-quantity="1" data-item-price="1337.0">
             <div class="c-CartItem">
               <div class="c-CartItem__thumbnail">
                 <img src="http://placekitten.com/300/300" alt="">
@@ -45,7 +61,7 @@
               <div class="c-CartItem__body">
                 <div class="c-CartItem__header">
                   <h3 class="c-CartItem__title">Siesta</h3>
-                  <a class="c-CartItem__remove" href="#">X</a>
+                  <a class="c-CartItem__remove js-remove-cart-item" href="#">X</a>
                 </div>
                 <p class="c-CartItem__description">Color: Red</p>
                 <div class="c-CartItem__footer">
@@ -57,7 +73,7 @@
               </div>
             </div>
           </div>
-          <div class="c-Cart__row">
+          <div class="c-Cart__row" data-item-id="2" data-item-quantity="2" data-item-price="1337.0">
             <div class="c-CartItem">
               <div class="c-CartItem__thumbnail">
                 <img src="http://placekitten.com/305/305" alt="">
@@ -65,9 +81,9 @@
               <div class="c-CartItem__body">
                 <div class="c-CartItem__header">
                   <h3 class="c-CartItem__title">Siesta</h3>
-                  <a class="c-CartItem__remove" href="#">X</a>
+                  <a class="c-CartItem__remove js-remove-cart-item" href="#">X</a>
                 </div>
-                <p class="c-CartItem__description">Color: Red</p>
+                <p class="c-CartItem__description">Color: Blue</p>
                 <div class="c-CartItem__footer">
                   <div class="c-CartItem__quantity">
                     Quantity component
@@ -92,7 +108,7 @@
                   TOTAL:
                 </div>
                 <div class="c-Checkout__price">
-                  $9,001.00
+                  <span class="js-cart-total">$9,001.00</span>
                 </div>
               </div>
               <button class="c-Button --primary --fullWidth" type="submit">CHECKOUT</button>

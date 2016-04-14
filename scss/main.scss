@@ -1,6 +1,22 @@
 $primaryText: #535674;
 
+@mixin mobile {
+  @media (max-width: 725px) {
+    @content;
+  }
+}
+
+@mixin clearfix {
+  &:after {
+    display: table;
+    clear: both;
+    content: '';
+  }
+}
+
+
 @import 'vendor/normalize';
+@import 'vendor/hamburgers';
 
 html {
   box-sizing: border-box;
@@ -13,15 +29,8 @@ body {
   font-family: 'Proxima Nova', Helvetica, sans-serif;
 }
 
-@mixin clearfix {
-  &:after {
-    display: table;
-    clear: both;
-    content: '';
-  }
-}
-
 @import 'objects/container';
+
 @import 'components/Menubar';
 @import 'components/Brand';
 @import 'components/Nav';
@@ -29,59 +38,15 @@ body {
 @import 'components/Cart';
 @import 'components/Hero';
 @import 'components/Section';
+@import 'components/MobileNav';
 @import 'components/Learn';
 @import 'components/Footer';
 @import 'components/FooterLabel';
 @import 'components/FooterNav';
 @import 'components/Newsletter';
 @import 'components/CartItem';
-
-.c-Checkout {
-  color: #7e7f86;
-
-  &__row {
-    @include clearfix;
-
-    &:not(:first-child) {
-      padding: .5em 0;
-    }
-  }
-
-  &__label {
-    float: left;
-    width: 50%;
-    color: #4b4b4b;
-    font-weight: 700;
-    letter-spacing: 1px;
-  }
-
-  &__price {
-    float: left;
-    width: 50%;
-    text-align: right;
-  }
-
-  .c-Button {
-    margin-top: 1em;
-  }
-}
-
-.c-Button {
-  padding: .875em 1.875em;
-  border: 0;
-  border-radius: 4px;
-  font-weight: 700;
-  letter-spacing: 2px;
-
-  &.--primary {
-    background-color: #111b9f;
-    color: #fff;
-  }
-
-  &.--fullWidth {
-    width: 100%;
-  }
-}
+@import 'components/Checkout';
+@import 'components/Button';
 
 .u-lh {
   line-height: 1.45;
@@ -93,9 +58,5 @@ body {
 }
 
 .u-clearfix {
-  &:after {
-    display: table;
-    content: '';
-    clear: both;
-  }
+  @include clearfix;
 }

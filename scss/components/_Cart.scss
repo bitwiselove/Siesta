@@ -11,6 +11,14 @@
   opacity: 0;
   transition: visibility 0s linear .25s, opacity .25s;
 
+  @include mobile {
+    top: 60px;
+    right: 0;
+    min-width: 0;
+    width: 100%;
+    border-radius: 0;
+  }
+
   &.is-visible {
     visibility: visible;
     opacity: 1;
