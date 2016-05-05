@@ -1,3 +1,5 @@
+new WOW().init();
+
 var toggleCartVisbility = function() {
   $('.js-cart').toggleClass('is-visible');
 };
